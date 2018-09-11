@@ -10,6 +10,18 @@ namespace _02_ByteBank
     {
         static void Main(string[] args)
         {
+            ContaCorrente contaCorrente = new ContaCorrente();
+
+            contaCorrente.titular = "Nome do titular";
+            Console.WriteLine(contaCorrente.titular);
+            Console.WriteLine(contaCorrente.agencia);
+            Console.WriteLine(contaCorrente.saldo);
+
+            contaCorrente.saldo = 200;
+
+            Console.WriteLine(contaCorrente.saldo);
+
+            Console.ReadLine();
         }
     }
 }
