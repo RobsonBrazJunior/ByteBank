@@ -18,6 +18,12 @@ namespace _04_ByteBank
             bool resultadoSaque = contaCliente.Sacar(50);
             Console.WriteLine(contaCliente.saldo);
             Console.WriteLine(resultadoSaque);
+
+            contaCliente.Depositar(500);
+            Console.WriteLine(contaCliente.saldo);
+
+
+            Console.ReadLine();
         }
     }
 }
