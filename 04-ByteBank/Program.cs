@@ -22,6 +22,15 @@ namespace _04_ByteBank
             contaCliente.Depositar(500);
             Console.WriteLine(contaCliente.saldo);
 
+            ContaCorrente contaCliente2 = new ContaCorrente();
+            contaCliente2.titular = "Cliente 02";
+
+            bool resultadoTransferencia = contaCliente.Transferir(100, contaCliente2);
+
+            Console.WriteLine("Saldo Cliente 1: " + contaCliente.saldo);
+            Console.WriteLine("Slado Cliente 2: " + contaCliente2.saldo);
+
+            Console.WriteLine("Resultado da transferência: " + resultadoTransferencia);
 
             Console.ReadLine();
         }
